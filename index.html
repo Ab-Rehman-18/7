@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Logical Operators & Functions</title>
+</head>
+<body>
+  <h1>Logical Operators :-</h1>
+
+  <script>
+    // ----- Logical Operators -----
+    let age = 20;
+    let hasLicense = true; // corrected spelling
+
+    if (age >= 20 && hasLicense) {
+      console.log("You can drive a car");
+    } else {
+      console.log("You cannot drive a car");
+    }
+
+    let isBirthday = false; // corrected spelling
+    let gotGoodResult = true; // corrected spelling
+
+    if (isBirthday || gotGoodResult) {
+      console.log("You will get a gift");
+    } else {
+      console.log("You will not get a gift");
+    }
+
+    let isWeekend = false; // corrected casing
+    if (!isWeekend) {
+      console.log("It's a school day");
+    } else {
+      console.log("It's weekend");
+    }
+
+    // ----- Function Example -----
+    function sayHello() {   // corrected function name
+      console.log("Abdul Rehman");
+    }
+
+    sayHello(); // corrected spelling
+
+    // ----- BMI Calculation with User Input -----
+    function calculateBMI() {
+      let weight = prompt("Enter your weight in kg:");
+      let height = prompt("Enter your height in meters:");
+      weight = Number(weight);
+      height = Number(height);
+
+      let bmi = weight / (height ** 2);
+      console.log("Your BMI is:", bmi);
+    }
+
+    calculateBMI();
+
+    // ----- Function Parameters & Arguments Example -----
+    function calculateBMIWithParams(weight, height) {
+      let bmi = weight / (height ** 2);
+      console.log("BMI (using parameters):", bmi);
+      return bmi;
+    }
+
+    // Function Arguments (Corrected numbers and commas)
+    calculateBMIWithParams(75, 1.82);
+
+    // ----- Marks Calculation Example -----
+    let obtMarks = prompt("Enter your obtained marks:");
+    let totalMarks = prompt("Enter your total marks:");
+
+    obtMarks = Number(obtMarks);
+    totalMarks = Number(totalMarks);
+
+    let percentage = (obtMarks / totalMarks) * 100;
+    console.log("Your percentage is:", percentage + "%");
+
+  </script>
+</body>
+</html>
